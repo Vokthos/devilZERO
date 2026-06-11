@@ -49,7 +49,16 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 pip install -e .
-devilzero
+devilzero --help
+```
+
+### System-wide (Linux)
+```bash
+git clone https://github.com/Vokthos/devilZERO.git
+cd devilZERO
+pip install -r requirements.txt
+pip install -e . --break-system-packages
+devilzero --help
 ```
 
 ### Docker
@@ -96,6 +105,9 @@ devilzero --layer7 http://example.com GET 200 --duration 120
 
 # DNS amplification (requires root)
 sudo devilzero --amp [IP] 53 DNS 50 reflectors.txt --duration 60
+
+# Run as Python module
+python -m devilzero --help
 ```
 
 ---
