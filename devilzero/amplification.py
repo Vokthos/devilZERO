@@ -4,7 +4,7 @@ import struct
 import threading
 import time
 
-from .utils import Colors, is_root, print_error, print_warning, print_info, print_success
+from devilzero.utils import Colors, is_root, print_error, print_warning, print_info, print_success
 
 
 class DNSAmplification:

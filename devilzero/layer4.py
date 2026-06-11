@@ -5,7 +5,7 @@ import struct
 from threading import Thread, Event
 from itertools import cycle
 
-from .utils import Colors, is_root, print_error, print_warning, print_info, random_ip, create_syn_packet
+from devilzero.utils import Colors, is_root, print_error, print_warning, print_info, random_ip, create_syn_packet
 
 
 class Layer4(Thread):

@@ -7,7 +7,7 @@ from urllib import parse
 
 import certifi
 
-from .utils import Colors
+from devilzero.utils import Colors
 
 
 SSL_CTX = ssl.create_default_context(cafile=certifi.where())

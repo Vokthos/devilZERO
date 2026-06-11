@@ -6,8 +6,8 @@ from typing import Set
 
 from requests import get
 
-from .config import PROXY_PROVIDERS
-from .utils import print_warning, print_error, print_info, print_success
+from devilzero.config import PROXY_PROVIDERS
+from devilzero.utils import print_warning, print_error, print_info, print_success
 
 logger = logging.getLogger("devilzero.proxy")
 

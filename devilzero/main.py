@@ -5,15 +5,15 @@ import time
 import socket as sock_mod
 from pathlib import Path
 
-from .utils import (
+from devilzero.utils import (
     Colors, clear_screen, print_banner, confirm_action,
     safe_input, print_error, print_success, print_info, print_warning, is_root
 )
-from .layer4 import Layer4
-from .layer7 import HttpFlood
-from .amplification import DNSAmplification
-from .proxy import ProxyPool
-from . import config
+from devilzero.layer4 import Layer4
+from devilzero.layer7 import HttpFlood
+from devilzero.amplification import DNSAmplification
+from devilzero.proxy import ProxyPool
+from devilzero import config
 
 
 def run_layer4(host, port, method, threads, duration):
